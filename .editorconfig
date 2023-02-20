@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CA1854: Prefer the 'IDictionary.TryGetValue(TKey, out TValue)' method
+dotnet_diagnostic.CA1854.severity = warning
