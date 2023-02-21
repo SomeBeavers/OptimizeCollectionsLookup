@@ -1,4 +1,9 @@
-﻿Dictionary<int, int> identifiersCache = new();
+﻿using Core_Console;
+
+Dictionary<int, int> identifiersCache = new();
+new UseUserDefinedExtensionMethod().Test();
+
+
 
 int GetIdentifier(int key)
 {
@@ -9,8 +14,6 @@ int GetIdentifier(int key)
         var v1 = 0;
         int v;
         v = identifiersCache[key];
-        Console.WriteLine(v);
-        Console.WriteLine(v);
     }
 
     
