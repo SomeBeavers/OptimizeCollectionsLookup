@@ -3,7 +3,7 @@
 namespace Framework_Lib
 {
     
-    public class Framework1
+    public class Framework2
     {
         IDictionary<string, string> _dictionary = new Dictionary<string, string>();
 
