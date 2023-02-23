@@ -1,7 +1,11 @@
-﻿using Core_Console;
+﻿using System.Collections.Concurrent;
+using Core_Console;
 
 Dictionary<int, int> identifiersCache = new();
-new UseUserDefinedExtensionMethod().Test();
+MyInnerClass myInnerClass = new MyInnerClass(){Name = "Name"};
+var _myInnerClasses = new ConcurrentDictionary<string, MyInnerClass?>();
+_myInnerClasses.TryAdd(myInnerClass.Name, myInnerClass);
+await new UseAsync().Test1(_myInnerClasses, myInnerClass);
 
 
 

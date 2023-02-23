@@ -6,8 +6,8 @@ public class Naming
     {
         if (dictionary.ContainsKey("key") /*caret*/)
         {
-            var myCollections = dictionary["key"];
-            Console.WriteLine(myCollections);
+            var _myCollections = dictionary["key"];
+            Console.WriteLine(_myCollections);
         }
     }
 }
