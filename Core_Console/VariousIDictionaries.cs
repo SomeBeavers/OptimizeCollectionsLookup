@@ -23,20 +23,20 @@ public class VariousIDictionaries
         }
     }
 
-    private void Test2(IDictionary<MyClass, MyAnotherClass?> myClassesDictionary)
+    private void Test2(IDictionary<MyClass, MyAnotherClass?> myCoolClasses)
     {
         MyClass myClass = new();
         MyAnotherClass? myAnotherClass;
 
-        //foreach (var   in myClassesDictionary.Values)
+        //foreach (var   in myCoolClassesDictionary.Values)
         //{
             
         //}
 
 
-        if (myClassesDictionary.ContainsKey(myClass)/*caret*/)
+        if (myCoolClasses.ContainsKey(myClass)/*caret*/)
         {
-            myAnotherClass = myClassesDictionary[myClass];
+            myAnotherClass = myCoolClasses[myClass];
         }
     }
 }
