@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using JetBrains.Annotations;
 
-namespace Core_Console;
+namespace Core_Console.TryGetValue;
 
 public class UseAsync
 {
@@ -14,7 +14,7 @@ public class UseAsync
             if (dictionary.ContainsKey(myClass.Name))
             {
                 await ChangeDictionary(dictionary);
-                
+
                 var _myInnerClass = dictionary[myClass.Name];
                 Console.WriteLine(_myInnerClass.Name);
             }

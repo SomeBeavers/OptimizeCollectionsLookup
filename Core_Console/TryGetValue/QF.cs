@@ -1,4 +1,4 @@
-﻿namespace Core_Console;
+﻿namespace Core_Console.TryGetValue;
 
 public class QF
 {
@@ -20,7 +20,7 @@ public class QF
             }
             else
             {
-                
+
                 value = count;
             }
 

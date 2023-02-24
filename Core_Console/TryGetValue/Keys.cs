@@ -1,4 +1,4 @@
-﻿namespace Core_Console;
+﻿namespace Core_Console.TryGetValue;
 
 public class Keys
 {
@@ -12,7 +12,7 @@ public class Keys
             _valueTuple = (1, "1");
             if (dictionary.ContainsKey(_valueTuple))
             {
-                
+
                 dictionary.TryGetValue(_valueTuple, out var v);
                 //v = dictionary[_valueTuple];
 

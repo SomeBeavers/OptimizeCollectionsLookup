@@ -18,6 +18,17 @@ public class Play1
 
             currentAnimal.Name = newBeaver.Name;
         }
+
+        var animal = _animals[AnimalType.cat];
+        Animal s = currentAnimal;
+        if (this._animals.ContainsKey(AnimalType.beaver)) {
+            var s1 = this._animals[AnimalType.beaver];
+            s = s1;
+        }
+        else
+            this._animals.Add(AnimalType.beaver, new Animal("beaver"));
+
+        Console.WriteLine(s);
     }
 
     //public string GetName() {

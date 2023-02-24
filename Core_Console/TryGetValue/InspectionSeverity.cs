@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace Core_Console;
+namespace Core_Console.TryGetValue;
 
 public class InspectionSeverity
 {

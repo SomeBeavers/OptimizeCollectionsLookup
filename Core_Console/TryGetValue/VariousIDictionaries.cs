@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Concurrent;
 
-namespace Core_Console;
+namespace Core_Console.TryGetValue;
 
 public class VariousIDictionaries
 {
@@ -49,14 +49,16 @@ public class VariousIDictionaries
         }
     }
 
-    public void Test4<T, U>(MyGenericDictionary<(int, T), U> dictionary, (int, T key) parameter, T key) 
+    public void Test4<T, U>(MyGenericDictionary<(int, T), U> dictionary, (int, T key) parameter, T key)
     {
-        if (dictionary.ContainsKey(parameter)/*caret*/) {
+        if (dictionary.ContainsKey(parameter)/*caret*/)
+        {
             var myClass = dictionary[parameter];
         }
 
         var _valueTuple = (1, key);
-        if (dictionary.ContainsKey(_valueTuple)/*caret*/) {
+        if (dictionary.ContainsKey(_valueTuple)/*caret*/)
+        {
             var myClass = dictionary[_valueTuple];
         }
     }
@@ -64,7 +66,7 @@ public class VariousIDictionaries
 
 #region Classes
 
-public class MyGenericDictionary<T,U>:IDictionary<T,U>
+public class MyGenericDictionary<T, U> : IDictionary<T, U>
 {
     public IEnumerator<KeyValuePair<T, U>> GetEnumerator()
     {

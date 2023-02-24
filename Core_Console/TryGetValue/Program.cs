@@ -1,5 +1,5 @@
 ﻿using System.Collections.Concurrent;
-using Core_Console;
+using Core_Console.TryGetValue;
 
 Dictionary<int, int> identifiersCache = new();
 MyInnerClass myInnerClass = new MyInnerClass(){Name = "Name"};
