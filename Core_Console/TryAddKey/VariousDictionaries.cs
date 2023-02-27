@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Immutable;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
+using System.Data.Common;
 
 namespace Core_Console.TryAddKey;
 
@@ -110,5 +111,17 @@ public class VariousDictionaries
         if (hashtable.ContainsKey(1)) {
             var s = hashtable[1];
         }
+
+        DbConnectionStringBuilder dbConnectionStringBuilder = new();
+
+        if (!dbConnectionStringBuilder.ContainsKey(1.ToString())) {
+            dbConnectionStringBuilder.Add(1.ToString(), "1");
+        }
+
+        if (dbConnectionStringBuilder.ContainsKey("1")) {
+            var s = dbConnectionStringBuilder["1"];
+        }
+
+        dbConnectionStringBuilder.TryGetValue("1", out var s1);
     }
 }
