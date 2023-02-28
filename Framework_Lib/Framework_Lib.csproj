@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContainsKey\ContainsKey1.cs" />
     <Compile Include="TryAddKey\VariousDictionaries.cs" />
     <Compile Include="TryGetValue\Class1.cs" />
     <Compile Include="TryGetValue\Framework2.cs" />
