@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="ContainsKey\" />
     <Folder Include="TryAddKey\" />
   </ItemGroup>
 
