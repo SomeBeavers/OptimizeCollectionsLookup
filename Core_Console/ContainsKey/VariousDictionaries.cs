@@ -25,12 +25,7 @@ public class VariousDictionaries
         if (parameter != null)
         {
             key = default!;
-            if (dictionary.ContainsKey(key)) {
-                dictionary[key] = parameter;
-            }
-            else {
-                dictionary.Add(key, parameter);
-            }
+            dictionary[key] = parameter;
         }
     }
 }

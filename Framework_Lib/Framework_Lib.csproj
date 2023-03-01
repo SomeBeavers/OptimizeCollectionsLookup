@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContainsKey\ContainsKey1.cs" />
+    <Compile Include="SetContains\SetContains1.cs" />
     <Compile Include="TryAddKey\VariousDictionaries.cs" />
     <Compile Include="TryGetValue\Class1.cs" />
     <Compile Include="TryGetValue\Framework2.cs" />

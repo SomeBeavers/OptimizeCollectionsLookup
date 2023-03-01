@@ -6,18 +6,18 @@ public class ContainsKey1
     {
         Dictionary<int, int> d = new();
 
-        // ReSharper disable RedundantDictionaryContainsKeyBeforeAdding
         if (d.ContainsKey(key))
-            // ReSharper restore RedundantDictionaryContainsKeyBeforeAdding
         {
             d[key] = value;
         }
         else
         {
-            d.Add(key, value);
+            d.TryAdd(key, value);
         }
 
+        // ReSharper disable RedundantDictionaryContainsKeyBeforeAdding
         if (d.ContainsKey(key))
+            // ReSharper restore RedundantDictionaryContainsKeyBeforeAdding
         {
             d[key] = value;
         }

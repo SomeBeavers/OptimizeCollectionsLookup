@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <Folder Include="ContainsKey\" />
+    <Folder Include="SetContains\" />
     <Folder Include="Playground\" />
   </ItemGroup>
 
